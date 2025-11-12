@@ -1,7 +1,7 @@
 package publisher;
 
-import service.PubSubService;
 import message.Message;
+import service.PubSubService;
 
 public interface Publisher {
 	

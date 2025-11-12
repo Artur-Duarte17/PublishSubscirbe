@@ -6,7 +6,8 @@ public class Message {
 	private String payload; // O "conteúdo" real da mensagem
 	
 	
-	public Message(){}
+	public Message() {
+	}
 	
 	
 	public Message(String topic, String payload) {
@@ -18,12 +19,15 @@ public class Message {
 	public String getTopic() {
 		return topic;
 	}
+	
 	public void setTopic(String topic) {
 		this.topic = topic;
 	}
+	
 	public String getPayload() {
 		return payload;
 	}
+	
 	public void setPayload(String payload) {
 		this.payload = payload;
 	}

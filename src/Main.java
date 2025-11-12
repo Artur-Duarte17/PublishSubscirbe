@@ -1,9 +1,9 @@
+import message.Message;
 import publisher.Publisher;
 import publisher.PublisherImpl;
 import service.PubSubService;
 import subscriber.Subscriber;
 import subscriber.SubscriberImpl;
-import message.Message;
 
 public class Main {
 	public static void main(String[] args) {

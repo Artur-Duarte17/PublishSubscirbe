@@ -1,9 +1,10 @@
 package subscriber;
 
-import java.util.ArrayList;
-import java.util.List;
 import message.Message;
 import service.PubSubService;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public abstract class Subscriber {
@@ -15,6 +16,7 @@ public abstract class Subscriber {
 	public List<Message> getSubscriberMessages() {
 		return subscriberMessages;
 	}
+	
 	public void setSubscriberMessages(List<Message> subscriberMessages) {
 		this.subscriberMessages = subscriberMessages;
 	}
@@ -33,9 +35,9 @@ public abstract class Subscriber {
 	// --- Método Concreto ---
 	
 	// Imprime todas as mensagens que este assinante recebeu
-	public void printMessages(){
-		for(Message message : subscriberMessages){
-			System.out.println("Message Topic -> "+ message.getTopic() + " : " + message.getPayload());
+	public void printMessages() {
+		for (Message message : subscriberMessages) {
+			System.out.println("Message Topic -> " + message.getTopic() + " : " + message.getPayload());
 		}
 	}
 }
